@@ -6,9 +6,9 @@
 
 ## Overview
 
-This repo does not have backend code yet. These files define the default
-backend direction for the first implementation tasks, distilled from the
-source PRD.
+The repo now uses a Next.js monorepo baseline instead of a standalone backend
+service. Backend concerns live in `apps/app` route handlers or server actions,
+with shared domain data in `packages/contracts`.
 
 If a later task chooses a different stack or service layout, update these
 guidelines in the same task before adding divergent code.
@@ -38,6 +38,7 @@ Primary product responsibilities:
 ## Current Project Reality
 
 - `doc/` is the preserved source/archive layer.
+- `landing/` is a legacy prototype reference, not the canonical app.
 - `.trellis/spec/` is the durable implementation rule layer.
 - `.trellis/tasks/*/prd.md` is the task-local execution layer.
 - External integrations with SecondMe or third-party social platforms are

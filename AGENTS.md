@@ -22,6 +22,7 @@ If you are new to Trellis, start here:
    ```
 6. In Codex, open the project and approve the Trellis hook once with `/hooks`.
 7. Treat `doc/` as source/archive. Put durable rules in `.trellis/spec/` and task work in `.trellis/tasks/`.
+8. Repo shape: `apps/site` is the public landing app, `apps/app` is the product walkthrough app, and `packages/contracts` holds shared demo payloads and domain types.
 
 <!-- TRELLIS:START -->
 # Trellis Instructions

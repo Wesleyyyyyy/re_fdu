@@ -6,7 +6,7 @@
 
 ## Core Domain Types
 
-Define and share explicit contracts for:
+Define and share explicit contracts in `packages/contracts` for:
 
 - `PrivacyLevel`
 - `UserProfile`
@@ -19,7 +19,7 @@ Define and share explicit contracts for:
 - `ReferralDecision`
 
 These types should exist in one shared contracts layer and be imported by both
-frontend and backend code.
+apps.
 
 ---
 

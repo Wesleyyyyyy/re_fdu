@@ -6,38 +6,51 @@
 
 ## Overview
 
-Until the stack-selection task says otherwise, treat RE_FUDAN as a single
-deployable TypeScript app with co-located UI and backend logic. Backend code
-should be feature-sliced around the product flow, not around abstract layers.
+Treat RE_FUDAN as a monorepo with backend-adjacent server logic living inside
+`apps/app`, not as a separate service layer.
+
+Backend code should be feature-sliced around the product flow, not around
+abstract layers.
 
 ---
 
 ## Bootstrap Layout
 
 ```text
-src/
-├── server/
-│   ├── profile/
-│   ├── matching/
-│   ├── dialogue/
-│   ├── referral/
-│   ├── privacy/
-│   ├── adapters/
-│   └── shared/
-├── contracts/
-└── mocks/
+apps/
+└── app/
+    └── src/
+        ├── app/
+        │   ├── api/
+        │   ├── onboarding/
+        │   ├── matching/
+        │   ├── dialogue/
+        │   └── referral/
+        ├── server/
+        │   ├── profile/
+        │   ├── matching/
+        │   ├── dialogue/
+        │   ├── referral/
+        │   ├── privacy/
+        │   ├── adapters/
+        │   └── shared/
+        └── mocks/
+
+packages/
+└── contracts/
 ```
 
 Use the folders as follows:
 
-- `profile/`: ingestion normalization, persona assembly, public/private views
-- `matching/`: path similarity, recommendation reasons, ranking inputs
-- `dialogue/`: A2A turn orchestration, trace formatting, handshake rules
-- `referral/`: human handoff, acceptance / rejection decisions
-- `privacy/`: shared privacy policy, filters, release guards
-- `adapters/`: external systems such as SecondMe, vector stores, scraping/import
-- `shared/`: framework-independent helpers used by multiple backend features
-- `contracts/`: shared request/response/domain schemas used by UI and backend
+- `app/api/`: route handlers for future external or internal APIs
+- `server/profile/`: ingestion normalization, persona assembly, public/private views
+- `server/matching/`: path similarity, recommendation reasons, ranking inputs
+- `server/dialogue/`: A2A turn orchestration, trace formatting, handshake rules
+- `server/referral/`: human handoff, acceptance / rejection decisions
+- `server/privacy/`: shared privacy policy, filters, release guards
+- `server/adapters/`: external systems such as SecondMe, vector stores, scraping/import
+- `server/shared/`: framework-independent helpers used by multiple backend features
+- `packages/contracts/`: shared request/response/domain schemas used by UI and backend
 - `mocks/`: seeded fixtures for demo mode and tests
 
 ---

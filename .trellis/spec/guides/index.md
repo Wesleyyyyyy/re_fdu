@@ -21,10 +21,14 @@ These guides help you **ask the right questions before coding**.
 
 | Guide | Purpose | When to Use |
 |-------|---------|-------------|
+| [ANP Protocol Summary](./anp-protocol-summary.md) | How ANP works and how RE:FUDAN uses it | Before implementing agent identity, discovery, or interfaces |
+| [Campus Interface Schema](./campus-interface-schema.md) | The 4 campus interfaces: request/response shapes | Before implementing backend matching or A2A endpoints |
+| [Second Me Architecture](./second-me-architecture.md) | Identity scaffold concept and what we borrow vs skip | Before designing the onboarding or agent profile system |
 | [Code Reuse Thinking Guide](./code-reuse-thinking-guide.md) | Identify patterns and reduce duplication | When you notice repeated patterns |
 | [Cross-Layer Thinking Guide](./cross-layer-thinking-guide.md) | Think through data flow across layers | Features spanning multiple layers |
 | [RE_FUDAN Product Brief](./re-fudan-product-brief.md) | Preserve the main product story and MVP boundaries | Before planning or building product features |
 | [Source Documents and Distillation](./source-documents-and-distillation.md) | Keep `doc/` and Trellis artifacts from drifting | When converting source docs into task/spec context |
+| [Repository Architecture](./repo-architecture.md) | Record the monorepo shape, stack choice, and shared contract boundary | When changing the repo layout or app split |
 
 ---
 

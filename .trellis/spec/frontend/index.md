@@ -6,8 +6,11 @@
 
 ## Overview
 
-This repo has no frontend code yet. These files define the default direction
-for the first implementation tasks.
+The repo now uses a dual-app Next.js baseline:
+
+- `apps/site` for the public landing experience
+- `apps/app` for the product walkthrough shell
+- `packages/contracts` for shared UI-visible domain types and demo payloads
 
 The product pitch is not "generic campus social". The UI must visibly express:
 
@@ -22,6 +25,8 @@ The product pitch is not "generic campus social". The UI must visibly express:
 
 | Guide | Description | Status |
 |-------|-------------|--------|
+| [Design System](./design-system.md) | Complete token system, grid, fonts, motion, components | Active |
+| [Landing Visual Diagnosis](./landing-visual-diagnosis.md) | Hermes clone gap analysis + fix priorities | Active |
 | [Directory Structure](./directory-structure.md) | Feature-sliced UI layout | Bootstrap default |
 | [Component Guidelines](./component-guidelines.md) | Product-specific component behavior | Bootstrap default |
 | [Hook Guidelines](./hook-guidelines.md) | Hooks for feature flow and derived state | Bootstrap default |
@@ -33,7 +38,8 @@ The product pitch is not "generic campus social". The UI must visibly express:
 
 ## Current Project Reality
 
-- `doc/用户需求PRD_latest.md` is the rich source document.
+- `doc/用户需求PRD_latest.md` remains the rich source document.
+- `landing/` remains a legacy static prototype reference.
 - The first implementation target is the core demo chain P0 -> P4.
 - Extra modes such as games, dating, clubs, or trading are future branches,
   not first-build obligations.
