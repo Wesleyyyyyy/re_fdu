@@ -14,7 +14,7 @@ const themeScript = `
 `;
 
 const headerCellClass =
-  "flex min-h-[9rem] items-start px-4 py-4 sm:px-6 sm:py-5";
+  "flex min-h-[5rem] items-center px-4 py-3 sm:px-6 sm:py-4";
 const headerLinkClass =
   "font-display text-[1.04rem] uppercase tracking-[0.18em] text-header-nav transition-colors hover:text-header-nav-hover";
 const headerLabelClass =
@@ -50,7 +50,7 @@ export default function RootLayout({
             <div className="section-shell">
               <div className="grid border-l border-header-border md:grid-cols-[minmax(16rem,1.35fr)_repeat(5,minmax(0,1fr))] [&>*:last-child]:border-b-0 [&>*]:border-b [&>*]:border-header-border md:[&>*:last-child]:border-r-0 md:[&>*]:border-b-0 md:[&>*]:border-r">
                 <div className={headerCellClass}>
-                  <div className="flex flex-col items-start gap-0.5 pt-1 leading-none">
+                  <div className="flex flex-col items-start gap-0.5 leading-none">
                     <span
                       className={headerWordmarkChineseClass}
                       style={{
@@ -66,7 +66,7 @@ export default function RootLayout({
                 </div>
                 <div className={headerCellClass}>
                   <a
-                    className={`${headerLinkClass} pt-1`}
+                    className={headerLinkClass}
                     href="#demo"
                   >
                     Demo
@@ -74,7 +74,7 @@ export default function RootLayout({
                 </div>
                 <div className={headerCellClass}>
                   <a
-                    className={`${headerLinkClass} pt-1`}
+                    className={headerLinkClass}
                     href="#features"
                   >
                     Features
@@ -82,14 +82,14 @@ export default function RootLayout({
                 </div>
                 <div className={headerCellClass}>
                   <a
-                    className={`${headerLinkClass} pt-1`}
+                    className={headerLinkClass}
                     href="#interfaces"
                   >
                     Interfaces
                   </a>
                 </div>
                 <div className={headerCellClass}>
-                  <div className="flex w-full items-start justify-between gap-4 pt-1">
+                  <div className="flex w-full items-center justify-between gap-4">
                     <span className={headerLabelClass}>Socials</span>
                     <a
                       aria-label="GitHub repository"
@@ -110,7 +110,7 @@ export default function RootLayout({
                   </div>
                 </div>
                 <div className={headerCellClass}>
-                  <div className="flex w-full items-start justify-between gap-4 pt-1">
+                  <div className="flex w-full items-center justify-between gap-4">
                     <span className={headerLabelClass}>Theme</span>
                     <ThemeToggle />
                   </div>
