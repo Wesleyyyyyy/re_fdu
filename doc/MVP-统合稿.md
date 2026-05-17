@@ -2,7 +2,6 @@
 type: project
 status: active
 created: 2026-05-17
-source: /Users/ethan/Documents/Obsidian Vault/20_Projects/hackathon/agent-network/RE_FUDAN MVP 统合稿：从 Second Me 的存在叙事、ANet 的网络底座，到我们真正该做的最小产品.md
 ---
 
 # RE:FUDAN MVP 统合稿
@@ -91,10 +90,7 @@ MVP 的灵魂页，唯一真正必须"精彩"的地方：
 
 ### 本仓库
 - `doc/用户需求PRD_latest.md`
-- `doc/RE_FUDAN-叙事哲学与设计语言.md`
 - `doc/RE_FUDAN-命名备忘与意象谱系.md`
-
-### Obsidian Vault（完整研究）
-- ANet 统合：`/Users/ethan/Documents/Obsidian Vault/20_Projects/hackathon/agent-network/ANet 与校园 agent-native 社交：为什么"把学生 agent 接到网络上"比"在应用里养分身"更适合我们.md`
-- Second Me 三道坎：`/Users/ethan/Documents/Obsidian Vault/20_Projects/hackathon/second me/Second Me 创始人资料与三道坎：从分身互联网到 A2A 社交的边界条件.md`
-- MVP 统合稿原文：`/Users/ethan/Documents/Obsidian Vault/20_Projects/hackathon/agent-network/RE_FUDAN MVP 统合稿：从 Second Me 的存在叙事、ANet 的网络底座，到我们真正该做的最小产品.md`
+- `.trellis/spec/guides/anp-protocol-summary.md` — ANP 协议工程摘要
+- `.trellis/spec/guides/campus-interface-schema.md` — 校园接口定义
+- `.trellis/spec/guides/second-me-architecture.md` — Second Me 架构与 RE:FUDAN 的取舍

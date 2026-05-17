@@ -145,7 +145,5 @@ humanAuthorizationRequired: boolean
 
 ## Source
 
-Distilled from:
-- `ANet 源码 / 协议拆解 06` (hotel/weather → campus interface schema)
-- Interface YAMLs: `interfaces/mentor-intro-interface.yaml`, `research-interest-match-interface.yaml`, `lab-slot-search-interface.yaml`, `alumni-referral-interface.yaml`
-- Located at: `/Users/ethan/Documents/Obsidian Vault/20_Projects/hackathon/agent-network/interfaces/`
+Distilled from ANet protocol teardown research (协议拆解 06: hotel/weather → campus interface schema).
+Interface YAMLs are in-repo at `packages/contracts/src/interfaces/`.

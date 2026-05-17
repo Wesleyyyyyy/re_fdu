@@ -156,7 +156,5 @@ Borders are ALWAYS visible — they are a primary compositional device, not deco
 
 ## Source
 
-- Hermes reverse assets: `/Users/ethan/workspace/explore/visual_design/landing/hermes_landing_reverse/`
-- Verified tokens: `hermes_landing_reverse/theme_states.json`
-- Architecture guide: `hermes_landing_reverse/notes/reusable_stack_and_theme_architecture.md`
-- Visual diagnosis: `.trellis/spec/frontend/landing-visual-diagnosis.md`
+Derived from Hermes Agent landing page reverse-engineering study (local research assets, not in repo).
+Token files (`tokens.css`, `tailwind.config.ts`) are already integrated into `apps/site/`.
