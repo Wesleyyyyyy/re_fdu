@@ -14,15 +14,15 @@ const themeScript = `
 `;
 
 const headerCellClass =
-  "flex min-h-[5.5rem] items-start px-4 py-2.5 sm:px-6 sm:py-3";
+  "flex min-h-[6rem] items-start px-4 py-2.5 sm:px-6 sm:py-3";
 const headerLinkClass =
   "font-display text-[1.22rem] uppercase tracking-[0.14em] text-header-nav transition-colors hover:text-header-nav-hover";
 const headerLabelClass =
   "font-display text-[1.08rem] uppercase tracking-[0.14em] text-header-nav";
 const headerWordmarkChineseClass =
-  "block shrink-0 text-[clamp(1.62rem,2.45vw,2rem)] leading-[0.84] tracking-[-0.14em] text-header-wordmark";
+  "block shrink-0 text-[clamp(2.12rem,3vw,2.58rem)] leading-[0.74] tracking-[-0.15em] text-header-wordmark";
 const headerWordmarkEnglishClass =
-  "block font-heading text-[clamp(1.66rem,2.2vw,2.08rem)] font-bold uppercase leading-[0.88] tracking-[0.14em] text-header-wordmark";
+  "block -mt-[0.03em] font-heading text-[clamp(1.98rem,2.82vw,2.42rem)] font-bold uppercase leading-[0.74] tracking-[-0.015em] text-header-wordmark";
 const githubHref = "https://github.com/abraxas914/re_fdu";
 
 export const metadata: Metadata = {
@@ -50,12 +50,12 @@ export default function RootLayout({
             <div className="section-shell">
               <div className="grid border-l border-header-border md:grid-cols-[minmax(16rem,1.35fr)_repeat(5,minmax(0,1fr))] [&>*:last-child]:border-b-0 [&>*]:border-b [&>*]:border-header-border md:[&>*:last-child]:border-r-0 md:[&>*]:border-b-0 md:[&>*]:border-r">
                 <div className={headerCellClass}>
-                  <div className="flex flex-wrap items-end gap-x-2 gap-y-1 leading-none">
+                  <div className="flex h-full flex-col items-start justify-start gap-0 leading-none">
                     <span
                       className={headerWordmarkChineseClass}
                       style={{
                         fontFamily: '"FZCuSong", serif',
-                        transform: "scaleX(0.9) scaleY(1.12)",
+                        transform: "scaleX(0.86) scaleY(1.12)",
                         transformOrigin: "left top",
                       }}
                     >
