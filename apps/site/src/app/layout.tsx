@@ -38,21 +38,21 @@ export default function RootLayout({
             <div className="section-shell">
               <div className="grid border-l border-header-border md:grid-cols-[minmax(16rem,1.45fr)_repeat(4,minmax(0,1fr))] [&>*:last-child]:border-b-0 [&>*]:border-b [&>*]:border-header-border md:[&>*:last-child]:border-r-0 md:[&>*]:border-b-0 md:[&>*]:border-r">
                 <div className="flex min-h-[5.25rem] items-center px-4 py-4 sm:px-6">
-                  <div className="flex flex-col gap-1">
+                  <div className="flex items-baseline gap-3">
                     <span
-                      className="text-[clamp(1.9rem,4vw,2.8rem)] leading-none tracking-[-0.08em] text-header-logo"
+                      className="text-[1.75rem] leading-none text-header-logo"
                       style={{ fontFamily: '"FZCuSong", serif' }}
                     >
                       复见
                     </span>
-                    <span className="font-heading text-[0.72rem] uppercase tracking-[0.28em] text-header-logo">
+                    <span className="font-heading text-[1.1rem] font-bold uppercase tracking-[0.05em] text-header-logo">
                       RE:FUDAN
                     </span>
                   </div>
                 </div>
                 <div className="flex min-h-[5.25rem] items-center px-4 py-4 sm:px-6">
                   <a
-                    className="font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-header-nav transition-colors hover:text-header-nav-hover"
+                    className="font-display text-[0.93rem] uppercase tracking-[0.16em] text-header-nav transition-colors hover:text-header-nav-hover"
                     href="#demo"
                   >
                     Demo
@@ -60,7 +60,7 @@ export default function RootLayout({
                 </div>
                 <div className="flex min-h-[5.25rem] items-center px-4 py-4 sm:px-6">
                   <a
-                    className="font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-header-nav transition-colors hover:text-header-nav-hover"
+                    className="font-display text-[0.93rem] uppercase tracking-[0.16em] text-header-nav transition-colors hover:text-header-nav-hover"
                     href="#features"
                   >
                     Features
@@ -68,7 +68,7 @@ export default function RootLayout({
                 </div>
                 <div className="flex min-h-[5.25rem] items-center px-4 py-4 sm:px-6">
                   <a
-                    className="font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-header-nav transition-colors hover:text-header-nav-hover"
+                    className="font-display text-[0.93rem] uppercase tracking-[0.16em] text-header-nav transition-colors hover:text-header-nav-hover"
                     href="#interfaces"
                   >
                     Interfaces

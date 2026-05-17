@@ -28,9 +28,9 @@ export function ThemeToggle() {
         setTheme((current) => (current === "dark" ? "light" : "dark"))
       }
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
-      className="group inline-flex w-full items-center justify-between gap-3 rounded-full border border-header-border bg-header-toggle-bg px-2 py-2 text-header-toggle-icon focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand"
+      className="group inline-flex w-full items-center justify-between gap-3 border border-header-border bg-header-toggle-bg px-2 py-2 text-header-toggle-icon focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand"
     >
-      <span className="font-heading-compressed text-[0.62rem] uppercase tracking-[0.18em]">
+      <span className="font-display text-[0.72rem] uppercase tracking-[0.16em]">
         Theme
       </span>
       <span className="relative grid h-7 w-[5.4rem] grid-cols-2 items-center rounded-full border border-border bg-surface p-1">

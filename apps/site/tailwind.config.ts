@@ -172,9 +172,10 @@ const config: Config = {
 
       // ── Border radius ──────────────────────────────────────────
       borderRadius: {
-        'card': '0.75rem',   // 12px — feature cards
-        'chip': '0.375rem',  // 6px  — tags, badges
-        'btn':  '0.5rem',    // 8px  — buttons
+        'card': '0px',
+        'chip': '0px',
+        'btn':  '0px',
+        'control': '9999px',
       },
     },
   },

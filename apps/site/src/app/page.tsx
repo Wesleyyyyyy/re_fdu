@@ -118,17 +118,17 @@ export default function LandingPage() {
               "linear-gradient(to bottom, transparent 0%, transparent 52%, color-mix(in srgb, var(--color-bg-canvas) 45%, transparent) 100%)",
           }}
         />
-        <div className="section-shell grid gap-14 pb-16 pt-24 sm:pt-28 lg:grid-cols-[minmax(0,1.15fr)_minmax(24rem,0.85fr)] lg:gap-12 lg:pb-20 lg:pt-36">
+        <div className="section-shell grid gap-8 pb-10 pt-16 sm:pt-20 lg:grid-cols-[minmax(0,1.15fr)_minmax(24rem,0.85fr)] lg:gap-10 lg:pb-14 lg:pt-24">
           <div className="flex max-w-[54rem] flex-col gap-8">
             <div className="flex flex-wrap items-center gap-3">
               <span className="eyebrow">Agent-native social</span>
-              <span className="rounded-full border border-hero-code-border bg-hero-code-bg px-3 py-1 font-mono text-[0.72rem] uppercase tracking-[0.14em] text-hero-code-text">
-                Second Me × Reconnect Hackathon 2026
+              <span className="border border-hero-code-border bg-hero-code-bg px-3 py-1 font-mono text-[0.72rem] uppercase tracking-[0.14em] text-hero-code-text">
+                AI Agent Workshop 2026
               </span>
             </div>
 
             <div className="space-y-6">
-              <h1 className="text-balance font-heading-expanded text-[clamp(3.9rem,13vw,10rem)] uppercase leading-[0.82] tracking-[0.02em] text-hero-title">
+              <h1 className="text-balance font-heading-expanded text-[clamp(2.4rem,6vw,5.5rem)] uppercase leading-[0.86] tracking-[0.02em] text-hero-title">
                 Your experience,
                 <br className="hidden sm:block" />
                 before you arrive.
@@ -143,13 +143,13 @@ export default function LandingPage() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                className="rounded-btn border border-transparent bg-hero-cta-primary-bg px-5 py-3 font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-hero-cta-primary-text transition-colors hover:bg-brand-hover"
+                className="border border-transparent bg-hero-cta-primary-bg px-5 py-3 font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-hero-cta-primary-text transition-colors hover:bg-brand-hover"
                 href={`${appUrl}/onboarding`}
               >
                 Build your agent
               </a>
               <a
-                className="rounded-btn border border-hero-cta-secondary-border bg-hero-cta-secondary-bg px-5 py-3 font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-hero-cta-secondary-text transition-colors hover:bg-brand-soft-hover"
+                className="border border-hero-cta-secondary-border bg-hero-cta-secondary-bg px-5 py-3 font-heading-compressed text-[0.78rem] uppercase tracking-[0.18em] text-hero-cta-secondary-text transition-colors hover:bg-brand-soft-hover"
                 href={`${appUrl}/matching`}
               >
                 Find your guide
@@ -158,7 +158,7 @@ export default function LandingPage() {
           </div>
 
           <div className="grid gap-4 self-end">
-            <div className="rounded-card border border-hero-code-border bg-hero-code-bg p-5 sm:p-6">
+            <div className="border border-hero-code-border bg-hero-code-bg p-5 sm:p-6">
               <p className="eyebrow !text-hero-code-text">
                 What changes in this model
               </p>
@@ -192,7 +192,7 @@ export default function LandingPage() {
                 (item) => (
                   <div
                     key={item}
-                    className="rounded-chip border border-border bg-surface px-3 py-3 text-center font-heading-compressed text-[0.68rem] uppercase tracking-[0.16em] text-secondary"
+                    className="border border-border bg-surface px-3 py-3 text-center font-heading-compressed text-[0.68rem] uppercase tracking-[0.16em] text-secondary"
                   >
                     {item}
                   </div>
@@ -204,11 +204,11 @@ export default function LandingPage() {
       </section>
 
       <section id="demo" className="border-b border-border">
-        <div className="section-shell py-18 lg:py-24">
-          <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div className="section-shell py-12 lg:py-16">
+          <div className="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div className="space-y-4">
               <p className="eyebrow">See it in action</p>
-              <h2 className="text-balance max-w-[32rem] font-heading-expanded text-[clamp(2.35rem,5vw,5rem)] uppercase leading-[0.86] tracking-[0.02em] text-primary">
+              <h2 className="text-balance max-w-[32rem] font-display text-[clamp(1.8rem,4vw,2.6rem)] leading-[1] text-primary">
                 The useful moment happens before the human meeting.
               </h2>
             </div>
@@ -220,7 +220,7 @@ export default function LandingPage() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(21rem,0.92fr)]">
-            <div className="arc-border overflow-hidden rounded-card border border-terminal-border bg-terminal-bg">
+            <div className="arc-border overflow-hidden border border-terminal-border bg-terminal-bg">
               <div className="flex items-center justify-between border-b border-terminal-border bg-terminal-header-bg px-4 py-3">
                 <div className="flex items-center gap-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-brand-action" />
@@ -239,7 +239,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="relative min-h-[24rem] overflow-hidden rounded-card border border-border bg-surface">
+            <div className="relative min-h-[24rem] overflow-hidden border border-border bg-surface">
               <div
                 aria-hidden="true"
                 className="landing-theme-image absolute inset-0"
@@ -254,7 +254,7 @@ export default function LandingPage() {
                   <span className="font-heading-compressed text-[0.7rem] uppercase tracking-[0.2em] text-primary">
                     RE:FUDAN signal field
                   </span>
-                  <span className="rounded-full border border-border bg-accent-soft px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-secondary">
+                  <span className="border border-border bg-accent-soft px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-secondary">
                     live mock
                   </span>
                 </div>
@@ -269,11 +269,11 @@ export default function LandingPage() {
       </section>
 
       <section id="features" className="border-b border-border bg-feature-section-bg">
-        <div className="section-shell py-18 lg:py-24">
-          <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div className="section-shell py-12 lg:py-16">
+          <div className="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div className="space-y-4">
               <p className="eyebrow">Features</p>
-              <h2 className="text-balance max-w-[30rem] font-heading-expanded text-[clamp(2.15rem,4.6vw,4.5rem)] uppercase leading-[0.9] tracking-[0.02em] text-feature-title">
+              <h2 className="text-balance max-w-[30rem] font-display text-[clamp(1.8rem,4vw,2.6rem)] leading-[1] text-feature-title">
                 Product signals the landing must make immediately legible.
               </h2>
             </div>
@@ -287,17 +287,17 @@ export default function LandingPage() {
             {featureCards.map((feature, index) => (
               <article
                 key={feature.title}
-                className="rounded-card border border-feature-card-border bg-feature-card-bg p-6 transition-all duration-150 hover:border-feature-card-border-hover hover:bg-feature-card-bg-hover hover:shadow-card-hover dark:hover:shadow-card-dark-hover"
+                className="border border-feature-card-border bg-feature-card-bg p-6 transition-all duration-150 hover:border-feature-card-border-hover hover:bg-feature-card-bg-hover hover:shadow-card-hover dark:hover:shadow-card-dark-hover"
               >
                 <div className="mb-5 flex items-center justify-between gap-4">
-                  <span className="rounded-chip bg-feature-tag-bg px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-feature-tag-text">
+                  <span className="bg-feature-tag-bg px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-feature-tag-text">
                     {feature.label}
                   </span>
                   <span className="font-heading-compressed text-[0.7rem] uppercase tracking-[0.18em] text-muted">
                     0{index + 1}
                   </span>
                 </div>
-                <h3 className="mb-3 font-heading-expanded text-[1.55rem] uppercase leading-[0.95] tracking-[0.02em] text-feature-title">
+                <h3 className="mb-3 font-display text-[1.55rem] leading-[1] text-feature-title">
                   {feature.title}
                 </h3>
                 <p className="text-[0.98rem] leading-[1.6] text-feature-body">
@@ -310,10 +310,10 @@ export default function LandingPage() {
       </section>
 
       <section id="interfaces" className="border-b border-border">
-        <div className="section-shell py-18 lg:py-24">
-          <div className="mb-10 space-y-4">
+        <div className="section-shell py-12 lg:py-16">
+          <div className="mb-6 space-y-4">
             <p className="eyebrow">Interfaces</p>
-            <h2 className="text-balance max-w-[34rem] font-heading-expanded text-[clamp(2.15rem,4.8vw,4.4rem)] uppercase leading-[0.9] tracking-[0.02em] text-primary">
+            <h2 className="text-balance max-w-[34rem] font-display text-[clamp(1.8rem,4vw,2.6rem)] leading-[1] text-primary">
               Four interfaces anchor the first believable demo.
             </h2>
           </div>
@@ -322,13 +322,13 @@ export default function LandingPage() {
             {interfaceCards.map((item) => (
               <article
                 key={item.title}
-                className="grid gap-4 rounded-card border border-border bg-surface p-6"
+                className="grid gap-4 border border-border bg-surface p-6"
               >
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h3 className="font-heading-expanded text-[1.55rem] uppercase leading-[0.96] tracking-[0.02em] text-primary">
+                  <h3 className="font-display text-[1.55rem] leading-[1] text-primary">
                     {item.title}
                   </h3>
-                  <span className="rounded-chip border border-border bg-accent-soft px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-secondary">
+                  <span className="border border-border bg-accent-soft px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-secondary">
                     {item.route}
                   </span>
                 </div>
@@ -342,7 +342,7 @@ export default function LandingPage() {
       </section>
 
       <section className="border-b border-border">
-        <div className="section-shell py-16">
+        <div className="section-shell py-10">
           <div className="mb-6 flex items-center gap-3">
             <span className="dither h-3 w-3 text-secondary" />
             <p className="eyebrow">Operating rules</p>
@@ -366,7 +366,7 @@ export default function LandingPage() {
       </section>
 
       <section className="border-b border-border">
-        <div className="section-shell grid gap-8 py-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-end lg:py-20">
+        <div className="section-shell grid gap-6 py-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-end lg:py-14">
           <p className="font-display text-[clamp(1.7rem,3vw,2.9rem)] leading-[1.2] text-primary">
             “In RE:FUDAN, you are not matched. You are seen again.”
           </p>
@@ -383,10 +383,10 @@ export default function LandingPage() {
         <div className="section-shell grid gap-6 border-t border-footer-border py-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
           <div className="space-y-3">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="rounded-chip bg-footer-badge-bg px-3 py-1 font-heading-compressed text-[0.68rem] uppercase tracking-[0.18em] text-footer-badge-text">
+              <span className="bg-footer-badge-bg px-3 py-1 font-heading-compressed text-[0.68rem] uppercase tracking-[0.18em] text-footer-badge-text">
                 Canonical landing runtime
               </span>
-              <span className="rounded-chip bg-footer-badge-bg px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-footer-badge-text">
+              <span className="bg-footer-badge-bg px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-footer-badge-text">
                 apps/site
               </span>
             </div>
@@ -398,7 +398,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-[0.74rem] uppercase tracking-[0.18em] text-footer-text-muted">
-            <span>Second Me × Reconnect Hackathon 2026</span>
+            <span>AI Agent Workshop 2026</span>
             <a
               className="font-heading-compressed text-footer-link transition-colors hover:text-footer-link-hover"
               href={`${appUrl}/onboarding`}
