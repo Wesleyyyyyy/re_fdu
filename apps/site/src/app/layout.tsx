@@ -30,19 +30,7 @@ export default function RootLayout({
         <Script id="re-fudan-theme-init" strategy="beforeInteractive">
           {themeScript}
         </Script>
-        <div
-          className="pointer-events-none fixed inset-0 z-[2] overflow-hidden"
-          style={{ mixBlendMode: "difference", opacity: 0.06 }}
-        >
-          <img
-            src="/assets/hero-bg.webp"
-            alt=""
-            aria-hidden="true"
-            className="h-[150dvh] w-auto min-w-[100dvw] object-cover object-left-top invert"
-          />
-        </div>
-
-        <div className="relative z-10">
+        <div className="relative">
           <header
             className="sticky top-0 z-50 border-b border-header-border backdrop-blur-md"
             style={{ backgroundColor: "var(--header-bg-scrolled)" }}

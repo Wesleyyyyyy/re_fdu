@@ -15,10 +15,10 @@ Monorepo for the RE_FUDAN demo.
 - `apps/site` is the only active landing runtime.
 - `landing/` is preserved for historical reference and should not receive new
   product work.
-- Hermes reverse-engineering assets live at
-  `/Users/ethan/workspace/explore/visual_design/landing/hermes_landing_reverse`.
-- The active implementation guide is
-  `.trellis/spec/frontend/landing-roadmap-v2.md`.
+- Hermes reverse assets are for token, font, and structure reference only.
+- Owned landing imagery comes from `apps/site/public/images/`.
+- Design system tokens and font files are already integrated into `apps/site/`.
+- See `.trellis/spec/frontend/design-system.md` for the token architecture.
 
 ## Stack
 

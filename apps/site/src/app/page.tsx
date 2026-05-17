@@ -100,8 +100,24 @@ nextStep: "agent_pre_conversation"`;
 
 export default function LandingPage() {
   return (
-    <main className="relative z-10">
-      <section className="border-b border-border">
+    <main className="relative">
+      <section className="relative isolate overflow-hidden border-b border-border">
+        <div
+          aria-hidden="true"
+          className="landing-theme-image landing-hero-media absolute inset-0 -z-20"
+        />
+        <div
+          aria-hidden="true"
+          className="landing-theme-overlay absolute inset-0 -z-10"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 0%, transparent 52%, color-mix(in srgb, var(--color-bg-canvas) 45%, transparent) 100%)",
+          }}
+        />
         <div className="section-shell grid gap-14 pb-16 pt-24 sm:pt-28 lg:grid-cols-[minmax(0,1.15fr)_minmax(24rem,0.85fr)] lg:gap-12 lg:pb-20 lg:pt-36">
           <div className="flex max-w-[54rem] flex-col gap-8">
             <div className="flex flex-wrap items-center gap-3">
@@ -224,11 +240,13 @@ export default function LandingPage() {
             </div>
 
             <div className="relative min-h-[24rem] overflow-hidden rounded-card border border-border bg-surface">
-              <img
-                src="/assets/hero-bg.webp"
-                alt=""
+              <div
                 aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover object-top opacity-80"
+                className="landing-theme-image absolute inset-0"
+              />
+              <div
+                aria-hidden="true"
+                className="landing-theme-overlay absolute inset-0"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-canvas via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0 grid gap-3 p-5 sm:p-6">

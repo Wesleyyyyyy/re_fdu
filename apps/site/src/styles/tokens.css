@@ -50,13 +50,15 @@
    Light theme
    ───────────────────────────────────────────────────── */
 [data-theme="light"] {
+  --bg-image: url('/images/bg-light.png');
+  --bg-overlay: rgba(238, 244, 255, 0.25);
 
   /* — Background — */
   --color-bg-canvas:        #F7FAFD;
   --color-bg-surface:       #FFFFFF;
   --color-bg-surface-muted: #F1F5FA;
   --color-bg-accent-soft:   #EEF3FB;
-  --color-bg-overlay:       rgba(247, 250, 253, 0.85);
+  --color-bg-overlay:       rgba(238, 244, 255, 0.25);
 
   /* — Text — */
   --color-text-primary:   #0050C8;
@@ -148,13 +150,15 @@
    ───────────────────────────────────────────────────── */
 :root:not([data-theme]),
 [data-theme="dark"] {
+  --bg-image: url('/images/bg-dark.png');
+  --bg-overlay: rgba(4, 28, 28, 0.55);
 
   /* — Background — */
   --color-bg-canvas:        #041C1C;
   --color-bg-surface:       rgba(255, 255, 255, 0.04);
   --color-bg-surface-muted: rgba(255, 255, 255, 0.07);
   --color-bg-accent-soft:   rgba(255, 230, 203, 0.08);
-  --color-bg-overlay:       rgba(4, 28, 28, 0.85);
+  --color-bg-overlay:       rgba(4, 28, 28, 0.55);
 
   /* — Text — */
   --color-text-primary:   #FFFFFF;
