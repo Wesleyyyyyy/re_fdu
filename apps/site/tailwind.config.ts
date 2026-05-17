@@ -90,6 +90,7 @@ const config: Config = {
         // ── Component: header ─────────────────────────────────────
         'header-bg':           'var(--header-bg)',
         'header-border':       'var(--header-border)',
+        'header-wordmark':     'var(--header-wordmark)',
         'header-logo':         'var(--header-logo)',
         'header-nav':          'var(--header-nav-link)',
         'header-nav-hover':    'var(--header-nav-link-hover)',

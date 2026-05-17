@@ -88,6 +88,7 @@
   --header-bg:             #F7FAFD;
   --header-bg-scrolled:    rgba(247, 250, 253, 0.92);
   --header-border:         #E5EBF3;
+  --header-wordmark:       #0050C8;
   --header-logo:           #0050C8;
   --header-nav-link:       #4E647F;
   --header-nav-link-hover: #0050C8;
@@ -188,9 +189,10 @@
   --header-bg:             #041C1C;
   --header-bg-scrolled:    rgba(4, 28, 28, 0.92);
   --header-border:         rgba(255, 230, 203, 0.15);
+  --header-wordmark:       #FFE6CB;
   --header-logo:           #FFFFFF;
-  --header-nav-link:       #FFE6CB;
-  --header-nav-link-hover: #FFFFFF;
+  --header-nav-link:       #FFFFFF;
+  --header-nav-link-hover: #FFE6CB;
   --header-toggle-bg:      rgba(255, 230, 203, 0.10);
   --header-toggle-icon:    #FFE6CB;
 
