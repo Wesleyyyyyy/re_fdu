@@ -2,37 +2,61 @@
 
 import { useEffect, useState } from "react";
 
-type Theme = "cool" | "warm";
+type Theme = "dark" | "light";
 
-const storageKey = "re-fudan-theme";
+const storageKey = "re-fudan-site-theme";
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("cool");
-  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    const saved = window.localStorage.getItem(storageKey) as Theme | null;
-    const initial = saved === "warm" ? "warm" : "cool";
+    const saved = window.localStorage.getItem(storageKey);
+    const initial: Theme = saved === "light" ? "light" : "dark";
     setTheme(initial);
-    document.documentElement.dataset.theme = initial;
-    setMounted(true);
+    document.documentElement.setAttribute("data-theme", initial);
   }, []);
 
   useEffect(() => {
-    if (!mounted) return;
-    document.documentElement.dataset.theme = theme;
+    document.documentElement.setAttribute("data-theme", theme);
     window.localStorage.setItem(storageKey, theme);
-  }, [mounted, theme]);
+  }, [theme]);
 
   return (
     <button
-      className="theme-toggle"
       type="button"
-      onClick={() => setTheme(theme === "cool" ? "warm" : "cool")}
-      aria-label={`Switch to ${theme === "cool" ? "warm" : "cool"} mode`}
+      onClick={() =>
+        setTheme((current) => (current === "dark" ? "light" : "dark"))
+      }
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+      className="group inline-flex w-full items-center justify-between gap-3 rounded-full border border-header-border bg-header-toggle-bg px-2 py-2 text-header-toggle-icon focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand"
     >
-      <span className="theme-toggle__dot" aria-hidden="true" />
-      <span>{mounted ? "THEME" : "THEME"}</span>
+      <span className="font-heading-compressed text-[0.62rem] uppercase tracking-[0.18em]">
+        Theme
+      </span>
+      <span className="relative grid h-7 w-[5.4rem] grid-cols-2 items-center rounded-full border border-border bg-surface p-1">
+        <span
+          aria-hidden="true"
+          className={`absolute top-1 h-5 w-[calc(50%-0.25rem)] rounded-full bg-brand-action transition-transform ${
+            theme === "dark"
+              ? "translate-x-0"
+              : "translate-x-[calc(100%+0.25rem)]"
+          }`}
+        />
+        <span
+          className={`relative z-10 text-center font-heading text-[0.58rem] uppercase tracking-[0.16em] ${
+            theme === "dark" ? "text-canvas" : "text-header-toggle-icon"
+          }`}
+        >
+          Dark
+        </span>
+        <span
+          className={`relative z-10 text-center font-heading text-[0.58rem] uppercase tracking-[0.16em] ${
+            theme === "light" ? "text-canvas" : "text-header-toggle-icon"
+          }`}
+        >
+          Light
+        </span>
+      </span>
     </button>
   );
 }

@@ -25,8 +25,9 @@ The product pitch is not "generic campus social". The UI must visibly express:
 
 | Guide | Description | Status |
 |-------|-------------|--------|
-| [Design System](./design-system.md) | Complete token system, grid, fonts, motion, components | Active |
-| [Landing Visual Diagnosis](./landing-visual-diagnosis.md) | Hermes clone gap analysis + fix priorities | Active |
+| [Landing Roadmap v2](./landing-roadmap-v2.md) | Implementation steps for Codex — HANDOFF-aligned | **Active** |
+| [Design System](./design-system.md) | Token overview (superseded by roadmap v2 for specifics) | Reference |
+| [Landing Visual Diagnosis](./landing-visual-diagnosis.md) | Original gap analysis (historical) | Archived |
 | [Directory Structure](./directory-structure.md) | Feature-sliced UI layout | Bootstrap default |
 | [Component Guidelines](./component-guidelines.md) | Product-specific component behavior | Bootstrap default |
 | [Hook Guidelines](./hook-guidelines.md) | Hooks for feature flow and derived state | Bootstrap default |
@@ -39,7 +40,12 @@ The product pitch is not "generic campus social". The UI must visibly express:
 ## Current Project Reality
 
 - `doc/用户需求PRD_latest.md` remains the rich source document.
-- `landing/` remains a legacy static prototype reference.
+- `apps/site` is the canonical landing runtime and the only active landing implementation target.
+- `landing/` remains a legacy static prototype reference and archive only.
+- Hermes reverse-engineering assets for landing work live at
+  `/Users/ethan/workspace/explore/visual_design/landing/hermes_landing_reverse/`.
+- The implementation handoff for that asset pack is
+  `/Users/ethan/workspace/projects/hackathon/reconnect_fdu/RE_FUDAN/.trellis/spec/frontend/landing-roadmap-v2.md`.
 - The first implementation target is the core demo chain P0 -> P4.
 - Extra modes such as games, dating, clubs, or trading are future branches,
   not first-build obligations.

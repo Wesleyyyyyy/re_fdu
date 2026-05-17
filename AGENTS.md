@@ -23,6 +23,9 @@ If you are new to Trellis, start here:
 6. In Codex, open the project and approve the Trellis hook once with `/hooks`.
 7. Treat `doc/` as source/archive. Put durable rules in `.trellis/spec/` and task work in `.trellis/tasks/`.
 8. Repo shape: `apps/site` is the public landing app, `apps/app` is the product walkthrough app, and `packages/contracts` holds shared demo payloads and domain types.
+9. `apps/site` is the canonical landing implementation. Do not add new landing work to `landing/`; it is archived reference only.
+10. Hermes reverse assets for the landing refresh live at `/Users/ethan/workspace/explore/visual_design/landing/hermes_landing_reverse`, with the main handoff in `/Users/ethan/workspace/explore/visual_design/landing/hermes_landing_reverse/HANDOFF.md`.
+11. For `apps/site`, use the semantic Tailwind/token layer from `src/styles/tokens.css` and `tailwind.config.ts`; do not reintroduce the old `cool/warm` theme model.
 
 <!-- TRELLIS:START -->
 # Trellis Instructions
